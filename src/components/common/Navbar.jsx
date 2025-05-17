@@ -5,6 +5,7 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { CiVideoOn } from "react-icons/ci";
 import { useDispatch } from 'react-redux';
 import { toggleSidebar } from '../utils/counterSlice';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -18,7 +19,7 @@ const Navbar = () => {
         <div className='fixed top-0 z-10 w-full h-16 flex items-center justify-between bg-white py-2 px-6'>
             <div className='flex items-center gap-5'>
                 <GiHamburgerMenu onClick={handleToggleSidebar} className='cursor-pointer' size={"24px"} />
-                <Logo />
+                <Link to='/'><Logo /></Link>
             </div>
             <div className='flex items-center w-[40%] border border-gray-400 rounded-full'>
                 <input className='border w-full border-none  border-gray-400 py-2 px-4 outline-none' placeholder='Search' type="text" />

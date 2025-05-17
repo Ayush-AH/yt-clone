@@ -1,12 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../home/Home";
 import Feed from "../feed/Feed";
 import Watch from "../Watch";
+import Layout from "../layout/Layout";
 
 const Router = createBrowserRouter([
   {
     path:"/",
-    element:<Home/>,
+    element:<Layout/>,
     children:[
       {
         path:"/",

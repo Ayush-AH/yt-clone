@@ -16,3 +16,7 @@
 #nosidebar::-webkit-scrollbar{
     display: none;
 }
+
+.taglist::-webkit-scrollbar{
+    display: none;
+}

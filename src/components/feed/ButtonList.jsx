@@ -1,29 +1,67 @@
 import React, { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { setCategory } from '../utils/counterSlice'
 
 const ButtonList = () => {
 
-    const [active, setActive] = useState("all")
+    const category = useSelector(store=>store.app.category)
+    const dispatch = useDispatch()
 
     const buttonList = [
-        "all",
-        "music",
-        "T-series",
-        "kriti sanon",
-        "realme",
-        "feature phones",
-    ]
+    "all",
+    "music",
+    "T-series",
+    "kriti sanon",
+    "realme",
+    "feature phones",
+    "bollywood songs",
+    "hindi songs",
+    "latest songs",
+    "trending songs",
+    "romantic songs",
+    "party songs",
+    "T-series music",
+    "bollywood hits",
+    "indian music",
+    "film songs",
+    "kriti sanon songs",
+    "kriti sanon movies",
+    "bollywood actress",
+    "bollywood celebrities",
+    "bollywood 2025",
+    "kriti sanon dance",
+    "kriti sanon interview",
+    "realme phone",
+    "realme review",
+    "realme unboxing",
+    "realme 2025",
+    "feature phones review",
+    "best budget phone",
+    "tech unboxing",
+    "smartphone comparison",
+    "indian tech",
+    "mobile phone tips",
+    "trending now",
+    "viral video",
+    "youtube india",
+    "2025 trending",
+    "desi content",
+    "shorts video",
+    "viral shorts"
+]
+
 
     const handleActiveTag = (tag)=>{
-        if(active !== tag){
-            setActive(tag)
+        if(category !== tag){
+            dispatch(setCategory(tag))
         }
     }
 
   return (
-    <div className='flex w-full items-center gap-3 overflow-hidden'>
+    <div className='taglist overflow-x-auto flex w-full items-center gap-3 overflow-hidden'>
         {
             buttonList.map((item,idx)=>(
-                <button key={idx} onClick={()=>handleActiveTag(item)} className={`px-4 py-1 whitespace-nowrap ${active === item ? 'bg-black text-white':"bg-gray-100 text-black"} rounded-md capitalize text-sm font-medium`}>{item}</button>
+                <button key={idx} onClick={()=>handleActiveTag(item)} className={`px-4 py-1 whitespace-nowrap cursor-pointer ${category === item ? 'bg-black text-white':"bg-gray-100 text-black"} rounded-md capitalize text-sm font-medium`}>{item}</button>
             ))
         }
     </div>

@@ -1,16 +1,10 @@
-import React from 'react'
-import Navbar from './components/common/Navbar'
-import {RouterProvider } from 'react-router-dom'
-import Router from './components/utils/Router'
-
+import React from "react";
+import Navbar from "./components/common/Navbar";
+import { RouterProvider } from "react-router-dom";
+import Router from "./components/utils/Router";
 
 const App = () => {
-  return (
-    <div className='h-full'>
-      <Navbar/>
-      <RouterProvider router={Router} />
-    </div>
-  )
-}
+  return <RouterProvider router={Router} />;
+};
 
-export default App
+export default App;
