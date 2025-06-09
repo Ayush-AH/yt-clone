@@ -2,7 +2,7 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../common/Navbar";
 import { Toaster } from "react-hot-toast";
-import Sidebar from "../Sidebar/Sidebar";
+import Sidebar from "../sidebar/Sidebar";
 
 const Layout = () => {
   return (
