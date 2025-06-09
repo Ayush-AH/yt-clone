@@ -37,7 +37,7 @@ const Navbar = () => {
     if (input.trim().length === 0) return;
 
     navigate(`/?search_query=${input}`);
-    dispatch(setCategory(query));
+    dispatch(setCategory(input));
   };
 // useEffect(() => {
 //   const fetchSuggestions = async () => {
