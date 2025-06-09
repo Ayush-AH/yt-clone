@@ -19,8 +19,8 @@ const VideoCart = ({ data }) => {
 
     return (
         <div className=''>
-            <img className='w-full rounded-lg' src={data.snippet.thumbnails.medium.url} alt="thumbnails" />
-            <div className='flex gap-2 mt-2'>
+            <img className='w-full h-56 bg-white/20 dark:bg-gray-300 rounded-lg' src={data.snippet.thumbnails.medium.url} alt="thumbnails" />
+            <div className='flex gap-2 mt-2 '>
                 <img className='rounded-full mt-1 w-[30px] h-[30px]' src={channelIcon ? channelIcon :null} alt="" />
                 <div>
                     <h4 className='text-sm font-semibold'>{data.snippet.title}</h4>

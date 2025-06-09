@@ -11,7 +11,6 @@ const ButtonList = () => {
     "all",
     "music",
     "T-series",
-    "kriti sanon",
     "realme",
     "feature phones",
     "bollywood songs",
@@ -58,10 +57,10 @@ const ButtonList = () => {
     }
 
   return (
-    <div className='taglist overflow-x-auto flex w-full items-center gap-3 overflow-hidden'>
+    <div className='taglist overflow-x-auto flex w-full items-center gap-3  overflow-hidden'>
         {
             buttonList.map((item,idx)=>(
-                <button key={idx} onClick={()=>handleActiveTag(item)} className={`px-4 py-1 whitespace-nowrap cursor-pointer ${category === item ? 'bg-black text-white':"bg-gray-100 text-black"} rounded-md capitalize text-sm font-medium`}>{item}</button>
+                <button key={idx} onClick={()=>handleActiveTag(item)} className={`px-4 py-1 whitespace-nowrap cursor-pointer ${category === item ? 'bg-black dark:text-black dark:bg-white text-white':"bg-gray-100 dark:bg-white/20 dark:text-white text-black"} rounded-md capitalize text-sm font-medium`}>{item}</button>
             ))
         }
     </div>

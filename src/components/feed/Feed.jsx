@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 const Feed = () => {
   const open = useSelector((state)=>state.app.open)
   return (
-    <div style={{ height: "calc(100vh - 64px)"}} className={`${open ? 'w-[84.5%]':'w-[95%]'}  p-3 bg-white mt-[64px]`}>
+    <div  className={`${open ? 'w-[84.5%]':'w-[95%]'} min-h-[95vh]  p-3 dark:text-white text-black bg-white dark:bg-black mt-[64px]`}>
         <ButtonList/>
         <VideoContainer/>
     </div>
