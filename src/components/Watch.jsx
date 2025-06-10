@@ -122,6 +122,7 @@ const Watch = () => {
                 </div>
               </div>
             </div>
+            
             <div className="flex items-center gap-2 ml-6">
               <div className="p-2 px-4 font-semibold text-sm rounded-full flex items-center gap-6 bg-gray-100 dark:bg-white/20 dark:text-white text-black">
                 <h5 className="leading-none cursor-pointer flex items-center gap-2">
