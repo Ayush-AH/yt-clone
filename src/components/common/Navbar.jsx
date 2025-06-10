@@ -63,7 +63,7 @@ const Navbar = () => {
       <div className="flex items-center gap-5">
         <GiHamburgerMenu
           onClick={handleToggleSidebar}
-          className="cursor-pointer"
+          className="cursor-pointer hidden sm:inline-block"
           size={"24px"}
         />
         <Link to="/">
@@ -72,7 +72,7 @@ const Navbar = () => {
       </div>
       <form
         onSubmit={handleSearch}
-        className="flex items-center w-[40%] border border-gray-400 rounded-full relative"
+        className="hidden sm:flex items-center w-[40%] border border-gray-400 rounded-full relative"
       >
         {/* <div className="w-[88%] flex flex-col p-4 rounded-lg bg-white/80 backdrop-blur-sm dark:bg-black/80 shadow-xl shadow-black/10 dark:shadow-white/10 absolute top-[110%] left-0">
           <span className="py-1 text-sm flex items-center gap-2">
@@ -91,9 +91,9 @@ const Navbar = () => {
         </button>
       </form>
       <div className="flex items-center gap-5">
-        <DarkModeToggle />
-        <CiVideoOn size={"24px"} />
-        <IoIosNotificationsOutline size={"24px"} />
+        <DarkModeToggle/>
+        <CiVideoOn size={"24px"} className="hidden sm:inline-block"/>
+        <IoIosNotificationsOutline size={"24px"}  className="hidden sm:inline-block"/>
         <img
           className="rounded-full w-[30px] h-[30px]"
           src="https://images.unsplash.com/photo-1457449940276-e8deed18bfff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

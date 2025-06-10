@@ -46,7 +46,7 @@ const VideoContainer = () => {
   }, [category]);
 
   return (
-    <div className="py-8 grid grid-cols-3 gap-4 bg-white dark:bg-black">
+    <div className="py-8 grid sm:grid-cols-3 grid-cols-1 gap-10 sm:gap-4 bg-white dark:bg-black">
       {loading ?  [0,1,2,3,4,5].map((s,i)=><SkeletonLoader key={i}/>) :video?.map((video, idx) => (
         <Link
           key={idx}

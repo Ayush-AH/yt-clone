@@ -7,7 +7,7 @@ import Sidebar from "../sidebar/Sidebar";
 const Layout = () => {
   return (
     <>
-      <div className="h-full bg-white dark:bg-black">
+      <div className="h-full bg-white dark:bg-black overflow-x-hidden">
         <Navbar />
         <div className="w-full flex relative h-full justify-end bg-white dark:bg-black">
           <Sidebar/>

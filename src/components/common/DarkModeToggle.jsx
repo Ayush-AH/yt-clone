@@ -20,7 +20,7 @@ const DarkModeToggle = () => {
 
   return (
     <button onClick={() => setIsDark(!isDark)}>
-      {isDark ? <MdDarkMode className='hover:rotate-12 duration-100 text-lg cursor-pointer'/> : <MdLightMode className='hover:rotate-12 duration-100 text-lg cursor-pointer'/>}
+      {isDark ? <MdDarkMode className='hover:rotate-12 duration-100 text-2xl sm:text-lg cursor-pointer'/> : <MdLightMode className='hover:rotate-12 duration-100 text-2xl sm:text-lg cursor-pointer'/>}
     </button>
   );
 };
