@@ -88,7 +88,7 @@ const Watch = () => {
       style={{ height: "auto" }}
       className={`${
         open ? "sm:w-[84.5%]" : "sm:w-[95%] "
-      } p-6 sm:p-3 sm:pl-0 py-[64px] w-full  bg-white dark:bg-black dark:text-white flex flex-col sm:flex-row justify-center`}
+      } p-3 sm:p-3 sm:pl-0 py-[64px] w-full  bg-white dark:bg-black dark:text-white flex flex-col sm:flex-row justify-center`}
     >
       <div className={`${open ? "sm:w-[65%] w-full" : "sm:w-[66%] w-full"}`}>
         <div className="sm:min-h-120 w-full bg-gray-200 dark:bg-white/20 rounded-xl">
@@ -114,7 +114,7 @@ const Watch = () => {
                 </h6>
               </div>
               <div className="flex items-center gap-2 sm:ml-6">
-                <div className="p-2 px-4 font-semibold text-sm rounded-full bg-black dark:bg-white dark:text-black text-white">
+                <div className="hidden sm:inline-block p-2 px-4 font-semibold text-sm rounded-full bg-black dark:bg-white dark:text-black text-white">
                   <h5 className="leading-none">Join</h5>
                 </div>
                 <div className="p-2 px-4 font-semibold text-sm rounded-full bg-gray-100 dark:bg-white/20 dark:text-white text-black">
@@ -172,7 +172,7 @@ const Watch = () => {
             Feb 9, 2024{" "}
             <span className="text-blue-600"> #reactjs #youtubeclone</span>
           </p>
-          <p className="text-sm w-[65%] mt-1">
+          <p className="text-sm w-full sm:w-[65%] mt-1">
             {visibleLines.map((line, i) => (
               <React.Fragment key={i}>
                 {line.split(/(https?:\/\/[^\s]+)/g).map((part, j) =>
